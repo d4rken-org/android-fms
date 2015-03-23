@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="general.background"
+        android:summary="Check this if you don&apos;t want the app to stop when leaving it."
+        android:title="Keep running in background" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="general.stoponunplug"
+        android:summary="Well you can turn this off, but it will give some bad feedback loop as sound comes from the speaker :p"
+        android:title="Stop on headset unplug" />
+    <PreferenceScreen
+        android:key="empty"
+        android:title="" 
+        android:summary=""/>
+    <PreferenceScreen
+        android:key="zurchpet.1"
+        android:title="WHY???" 
+        android:summary="It wasn't really my idea, we were chatting away on IRC, playing with ideas for new apps, when zurchpet suddenly went:"/>
+    <PreferenceScreen
+        android:key="zurchpet.2"
+        android:title="Answer: zurchpet" 
+        android:summary="ZOMFG I want an app to fms! I asked him how he imagined it and this is the result. So yeah... It's all his fault! ;-)"/>
+</PreferenceScreen>

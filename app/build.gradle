@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+def gitSha() {
+    return 'git rev-parse --short HEAD'.execute().text.trim()
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.0"
+
+    defaultConfig {
+        applicationId "eu.thedarken.fms"
+        minSdkVersion 8
+        targetSdkVersion 22
+        versionCode 7
+        versionName "1.7"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        applicationVariants.all { variant ->
+            if (variant.buildType.name == "release") {
+                variant.outputs.each { output ->
+                    def file = output.outputFile
+                    output.outputFile = new File(file.parent, defaultConfig.applicationId + "-v" + defaultConfig.versionName + "-" + defaultConfig.versionCode + "-" + gitSha() + ".apk")
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+}

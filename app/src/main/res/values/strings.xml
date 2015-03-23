@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FMS</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="slider_info">Delay ( less | more )</string>
+    <string name="app_desc">FMS will playback audio from the microphone through your headphones with a timedelay.\nAfter pressing the button it will take the specified amount of time, till you hear the first sound.</string>
+    <string name="aborting_not_possible">Aborting not possible during initialisation. Please wait for the delay.</string>
+    <string name="stopping">Stopping</string>
+    <string name="no_headphones_notice">I think you don\'t have a headphones plugged in.\nThis will create audio feedback.</string>
+    <string name="dont_care">I don\'t care</string>
+    <string name="error_lower_delay">There was an error initialising, try a lower delay.</string>
+    <string name="recording">Recording</string>
+    <string name="current_delay_x">Delay is ~%s</string>
+    <string name="settings">Settings</string>
+</resources>
