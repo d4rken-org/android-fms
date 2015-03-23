@@ -1,2 +1,2 @@
 # android-fms
-FMS
+https://play.google.com/store/apps/details?id=eu.thedarken.fms
