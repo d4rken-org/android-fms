@@ -6,14 +6,14 @@ def gitSha() {
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "22.0.0"
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "eu.thedarken.fms"
         minSdkVersion 8
         targetSdkVersion 22
-        versionCode 20
-        versionName "2.0"
+        versionCode 21
+        versionName "2.1"
     }
     buildTypes {
         release {
