@@ -2,3 +2,5 @@ Privacy policy for "FMS - Audio delay".
 
 This app doesn't collect data.
 Recorded audio data doesn't leave the app and is neither stored nor made available to others.
+
+If you have further questions, just send a quick mail to support@darken.eu.
